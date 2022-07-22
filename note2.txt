@@ -1,0 +1,21 @@
+3---
+▶ git init   initilaize  git
+▶ git status  check branch  and repo 
+
+4---
+dit-scm.com     documednt   init 
+
+hidden folder start with .      .git   if delete this .git   my hstory is gone
+
+5--
+
+git  track nested  folder   if  you  make  git init    git track  git   be  wrong     confuse  program 
+6--
+save  file   then   add to git
+7--
+stage area  
+git add name name name     
+can group them then commit
+8---
+
+git commit-m " a   message "   sumrize  of commit   best prctise

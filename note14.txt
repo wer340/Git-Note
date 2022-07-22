@@ -1,0 +1,31 @@
+1-------
+not probaly 50-100 commit before
+reword commit   drop commit 
+2---
+second way git rebase command 
+rewrite  history
+✅✅we dont want to rewrite commits and make new commit hashes and screw everything up  if collaborator already have work
+so you many commit fix bug , failwaare  and like combine then share
+when git rebase  feature branch  make new hash and order tip og last commit mau\in
+but we say git with flag -i  interactive   that want to change commite name or drop of them
+▶git rebase -i head~4
+▶git log --oneline
+3----
+when on local  not carry to message  but you share in big project or sent your boss be important for you
+https://github.com/Colt/interactive-rebase-demo
+exercise
+im not specifying a branch we are not rebasing on to a branch where rebasing in place
+ i just want to rebase in place on top of the branch     that  mean   number of commit thAT SELECTED with ~head
+git rebase -i head~4 
+in text editor we will see list of commit  (head~4=4)  prfix  
+✅pick  use the commit  keep  message and content  ⛔⛔not mean keep hash code
+✅reword use the commit but edit the commit message   ✅✅✅🌿change hash after this hash 
+✅edit use the commit but stop for amending
+✅fixup use commit contents but meld it into previous commit and discard the commit message
+✅drop remove commit
+4-----
+fixdup     we change  pick  with reword   every selected with mark fixup  smushed up with previos commit 
+5---
+completelly remove 
+edit and stuff last commit  beter way   git commit --amend
+we rewote history✔🌿

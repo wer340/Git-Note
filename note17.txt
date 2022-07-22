@@ -1,0 +1,39 @@
+1--
+screw up something up terribly 
+i lost commit when rebase   and  i undo something   semms undoable 
+reflog command help  we fix thing    you do needed is lifsaver
+2---
+refrence log   shortterm 
+git record when they change 
+head reflog
+ ✅ commit d  > commit h  >> commit h switch to feature> commit s >sommit s aswitch  to h   
+
+▶ls .git    > logs directory   >head file  this file is readable  not binaary 
+each one of these entries ia a move for head reference
+
+
+3---
+reflog has only local   means  if clone of repo you have not log/head   that see  what happening before you catch 
+my machine and my changes 
+git only keep reflog on your local activitiy they are not shared with collaborator 
+reflog  also expire   git cleans out old entries around 90 days though this can be configured you can change it 
+4---
+git reflog 
+the git reflog command accepts subcommands show expire delete and exists  show is the only commonly used variant and it is the default subcommand
+git reflog show will show  the log of a specific reference (it default to head)
+for example to view the log for the tip of the main branch we could run ▶git reglog show head    head@{43} a  specific reflog  in history
+  for branch  feature@{} relate each branch
+5-a6----
+name@{qualifier} ✅access spicefic pointer
+▶git checkout head~3  🌹✅parent head three genration of parent ago  
+  ▶git checkout head@{2}  
+git diff head@{3} head@{5}
+
+reflog time references
+every log  head@{x} have  timestamp   ▶git checkout head@{yesterday}   one.week.ago  2.day.ago  ▶git reflog show head@{yesterday}
+7---
+retrive with reflog   after git reset  git rebase and ,... 
+i can use same thing     if ▶git rest --hard hash  you can retrive  ▶git reset --hard master@{1}   
+this command can rescue us   in situation atied to commit  and  we  have confuse this thing
+8----
+▶git reflog show flowe@{0}  ▶git rebase -i head~5  interactive   back to old     ▶git reset --hard hash

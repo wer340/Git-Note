@@ -1,0 +1,45 @@
+1---
+say 5 commaand
+undo change , view change , go back time 
+this section is a mostly crew of deffrent command
+this command  usualy not use them daily
+2---
+checkout swiss knif      ▶git checkout hash 7letter hash   L-->R
+jump back time 
+head refrence  detached    git log   you show commit at that time ✅ 
+detach astate you can look around make experimental changes aand commit them and you can descard any commit
+you make in this state without impacting any branches by switchinh back to a branch
+3--
+we can poke around with git checkout 
+▶git checkout 4fddf46    and  ▶git switch -c  name_branch    time travling ✅
+4---
+✅base upon    ▶git checkout head~1  refers to the commit before head (parent) 
+▶git checkout head~1   refers to 2 commits before head (grandparent)  and  head~3   ~4 ~5 ...
+▶git switch -     return before branch that switched
+
+5---  
+revert change
+▶git checkout head   <filename.txt>  shorter comand  ▶git checkout -- filename.txt  filename.txt 
+6---
+git restore  ait s new command in git its pretty new
+▶git restore  <filename.txt>     same  ▶git checkout head   <filename.txt>     like switch command take of some burden away checkout command
+✅✅✅if i havent add  or commited   those changes   if i lose  those changes  it has no record of them
+if  we  havent time travel but a file  returb to  old commit 
+✔✔✔✔✔✔ ▶git restore --source head~3 <filename.txt>  if return back again  ▶git restore <filename.txt>
+7---
+unstage  file 
+▶git restore --staged  <filename.txt>
+write  the way alert in git mesaage if forgot this command
+
+8----
+undoing commit   two reset  hard reset  and regular reset
+▶git reset  <commit hash>    ▶remove commit   and  change file after hash commit put  unstage area   plain rest
+in plain rest not lose change 
+second method hard reset   ▶ git rest --hard head~1   changes file  are gone
+beter  in  method one use   stash  them  switch  new  branch   and keep them
+9---
+revert  similR to reset   undoing commit  the way they accomplish its defferent
+reset remove commit entirly and it move the branch pointer backward as if those commit  never occurred never existed first plase
+revert it make new commit that basicly says undoing changes instead of just deleting every thing
+▶git revert hashcommit   this hash relate  commit  that remove  from branch  
+then open text editor  write a message for revert commit 

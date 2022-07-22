@@ -1,0 +1,49 @@
+2----
+   couple of thing confusing
+boil it down (brif) to these two principal
+✅we merge branches not specific commits so we dont pick one  commit and a second commit and join them together we merge branches
+✅we always merge based on current head branch  we merge to where we are   to where head is  and merge  a merged branch is into master branch  not ever  branch is on every where
+
+this name  fast forward merge  because thats all we had to do for this branch to catch up  
+✅no additional work on maaster branch   and just one of them  of branch   have  additional commit  say fast  forward branch
+
+when merge   main tree  have all  history commit   own branch+merged branch
+3----
+git branch -v   little bit more information   last commit + message name  commit
+then  git log   see  whether   fast forward merge  caan be   or not ?   
+  ✅---✅---✅  
+       	 /
+         ✅---✅---✅
+after merge  branch not deleted   this is  a sepaarate branch  and  continue  new  exprement on branch
+4---
+git craken   click on name branch  on tool menu  and  switch another branch
+
+5---
+something  called a merge  commit  is generated  just makes  a  commit for us on branch that
+we are merging into  the recipient branch 
+
+commit can have multiple parent and in fact they do whenever we make a merged commit 
+this type  of commit that  both  main tree aand  other tree  have new commit 
+if  commit  relate  same file   is good   and  not complicated 
+✅example   x branch work on css   y branch on php  two diffrent file
+git was able to figure out  oh  just merge in that new stuff into the actual file same 
+
+6---
+when you encounter a merge conflict Git   warns you in the console that it could not automatically merge 
+it ✅also changes the contents of your  files to indicate the conflicts that it wants you to resolve 
+for resolve conflict
+
+1-open up file  with merge conflict
+2-edit the files to remove the conflict  decide branchs content you want to keep in each conflict .or keep the content from both
+3-remove the conflict markers in the document 
+4-add your changes and then make a commit
+7---
+narrow  down   problem   to  little files aand  little line
+when  run  git  merge name    then error     git put branch on maain branch   only want you manualy same file  chage  and commit 
+
+8---
+git checkout -b name   = git branch -c name 
+
+9---
+exrice
+3 senario     ✔fast forward branch   ✔no conflict     ✔conflict

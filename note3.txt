@@ -1,0 +1,31 @@
+2----
+go to 🌎https://git-scm.com/docs
+ and  book  and  refrence    when  stuck   about flag  or consept
+3-atomic commit
+a commirt ✅encompass a single feature change or fix    try to keep each commit focused on a single thing    atom not detach to smaller peace
+this subject very important in team work
+4---
+offically present tense    like make something   change x   fix  x    
+makes xyzzzy do frotz  instead of [this patch]  makes xyzzy do frotz or i changed xyzzy to do frotz  
+https://bit.ly/3KYRWdw article  iranR    when use  past tense  like  do  this part with you   suitable personal
+https://bit.ly/3kX7V16  staack over flow chllenge  this tense
+git imperative >Describe your changes in imperative mood, e.g. "make xyzzy do frotz" instead of "[This patch] makes xyzzy do frotz" or "[I] changed xyzzy to do frotz", as if you are giving orders to the codebase to change its behaviour.
+https://bit.ly/3P9EfeX  link git kernel  https://www.danclarke.com/git-tense  diary
+
+5---
+when install git default git editor vim
+if  git commit   whithout -m   git return  vim editor
+when  editor   hit  I  untill insert mood  so  that ✅i hit ✅esc  exit insert mood  then  type ✅:wq    write  quite
+https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config
+
+6---
+list commit sumrize  for scaning   git log --oneline     --abbrev-commit
+
+7--
+gitkraken   commit  
+8---
+forgot  a file  add to commit    just a commit ago 
+▶ git commit --amend
+9--
+gitignore
+node_modules/     / mean  folder

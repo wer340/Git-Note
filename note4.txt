@@ -1,0 +1,48 @@
+2---
+every commit  gets this weird looking hash    this  uniq  coreespond  a commit  couple thing  1-parent   2-message
+if   work   in team   and  every body  on a feature  servese chat   bot ,..   if  countinue  this commit in a linear fashion 
+this would be practically impossible  
+branch are a signature feature of git   alternative timeline for project 
+
+3--
+you early  work with branch  although not make  a branch  but  on a master branch
+✅git work on branchig
+in git we are alwayse working on a branch the defult name is ✅master  📌its just like any other branch
+some people  master branch as  offical branch no mess     you can delete you can rename it 
+master ?  main ?    in 2020 ✅ github renamed the deafult branch from master to main   but the default git branch is  still master 
+▶most company main as  main copy branch
+
+Head - > master head arrow master    what this thing
+4----
+head a pointer that refers to current location in your reposetory     head  to a particular branch refs
+head always points to latst commit you made on the master branch✅ 
+think about branch as  bookmark in a book    same  time  a bookmark open  of this book   
+ this examp that its  actully open to the bookmark  so that  is what head refers to head is our current location 
+head s refence to a branch pointer  branch pointer is where a branch currently is  its like thats bookmark in a book
+we  can have whole bunch of branches and each one has a branch reference that just referto where that branch is 
+each branch has a branch reference pointing to where we left off
+head  refre  to last commit✅✅✅
+
+5----
+git branch   show  list branch   *   star    on branch active
+6---
+git branch name  create branch
+git switch  name branch     actve  on name branch
+7---
+✅git commit -a -m  "  "     one line   add and commit
+when git on each branch    you create branch   this branch again tree    🌿
+8----
+git checkout     it still exist in git  it does a lot more than just switching branch 
+it just kind of  knif  swiss
+git switch -c  c stand for create   name branch  shortcut switch branch and create
+9---
+if  switch branch  and  not commited change  on current commit or stashed    git erro   first  distict change on current branch then switch another branch
+sometime you have unstaged changed they will come with you✅ other time if they  re in conflict git yell at you❌❌
+10---
+we have any where delete branch but not be on branch   git branch -d name   -D  capital   equivalent  --force
+rename   but  have to on branch  and cant frequently rename  branch    ✅git branch -m new name   m -> move
+11---
+how git store
+The ✅cat command is a utility command in Linux. One of its most commonly known usages is to print the content of a file
+ onto the standard output stream. Other than that, the cat command also allows us to write some texts into a file
+> unix command   this thing store to name file

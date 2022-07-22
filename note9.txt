@@ -1,0 +1,68 @@
+1---
+ssh key that proably the most annoying part of this section☢
+
+2---
+github is hosting platform    collabrate your repo
+git ?? github the same   no❌❌❌  hithub  has a record of my repository
+gitlab    bitbucket gerrit    github founded  2008   largest host of source code
+chat  autmoticallly scanning code 
+3---
+stay update  look for job  with contribut   and community
+
+4---
+cloning    getting and creaating  git      ✅init  and ✅clone
+▶git clone <url>
+when git clone   git own  make directory for this repo bringing down
+this is git command   not tied with github
+5--
+you can clone  every repo on github public
+git clone is native command related  git  not tied to github
+6--
+register github
+  beter your email locally  is same  register github  
+▶git config user.mail
+so without going into  much detail ssaa ley 
+stand for secure shell  is this protocol that allows authenticated whitout having to write our email or username  and password
+every single time  we want to interact with github from the command line 
+a obnoxious  process  but we have once time 
+Checking for existing SSH keys    ▶ls -al ~/.ssh
+id_rsa.pub
+id_ecdsa.pub     algoritm encrypt
+id_ed25519.pub
+▶ssh-keygen -t rsa -C "your_email@example.com"     produce key
+▶eval "$(ssh-agent -s)"   whether such a key exist in mange
+▶ssh-add ~/.ssh/id_ed25519   add key  in ssh agent managnment
+▶clip < ~/.ssh/id_ed25519.pub
+paste to setting > ssh key area  github accunt   name  device
+7---
+add new repo  >public✅ a
+create repo button
+8---
+remote 
+we need to a setup destination to push up to
+▶git remote -v   to view any existing remote for your reposetory we can run git remote  
+this can just display a list of remote
+adding a new remote
+▶git remote add name  url  standard name is origin   not special name no magical  its a name ✅same way git  that master is main branch 
+  could  a  another name ▶git remote add mygithubur1  https://github.com/
+not commonly command
+▶git remmote rename <old> <new>
+▶git remote remove <name>
+9---
+▶git push <remote> <branch>
+▶git push origin master   on other branch ▶git push origin apple
+10------------
+toring github
+tab ▶▶▶ <>code ▶▶⏲commit
+11----
+git push practise
+12---
+main or master    when create repo  if  click checkbox ✅ on ▶add a readme file  
+github a create branch untill make readme file on repo  ✅git work on branch 
+and github put name  main branch   since 2020   
+▶git branch -m main   
+13---
+github > setting > repo   change  deafult main branch   
+14----
+practise 
+merge branch in git local    github  for share

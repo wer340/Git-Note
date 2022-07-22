@@ -1,0 +1,50 @@
+1---
+a command dont uses by alot of people     recoomand avoid rebasing if possible
+when not rebasing  somrthing  acalled the golden rule of freebasing
+ 
+
+2---
+divide two group
+company that use git rebase 
+and company that say to devloper  avoid all the time 
+it s  screw things  up   its not for beginners  kind of scary command
+you have to know  when not use it ✔ golden rule of rebasing and we focus on that this section
+so there is a divide within the community because is an alternative to merging 
+there two different thing realy that people do rebasing
+first you can use rebase instead of merge 
+
+second case for rebase is to clean up your own commit clean up your git history
+
+3----
+main branch next commit  bug fix
+im on a branch feature  and dont want todiverge the master branch for a super long time 
+then i merge of  conflict type bexause each one process commit  toward  
+if  this cycle repeat again   team very active  master branch  update as soon as possible ✔i need countiusly merge for dont have diverge
+finaly  when they merge those back into master there is just a bunch of useless merge commit as part
+our history more annoying an muddier and less clean✅
+❌❌❌so this doesnt indicate yje time where thing were made where permits were created
+4---
+ exercise  merge commit   muddier specially   hugr project
+rebase   haave linear history
+
+5----
+i have on mt feature branch taht work is not going to be destroyed or anything like that but commit are going to be recreated and they are going
+to be added to the tip of my master branch  so we end up  with a linear structure  ✅✅we still have two branch
+because is just a pointer with just a refrence but now we dont have these merge commit where if we dont realy need to go into it now
+but each one of ✅these merge has two parent here but in rebase  every commit has single parent
+just type  ▶git rebase master     all merge unit in one   with linear history
+when type git  log   see that remove merge commit   hash code  rewrote    its new history  master branch hash  unchange
+it depen your ✅workflow  notice❌❌❌ ▶git switch feature branch   ▶git rebase
+its not mix with master  even though the code is all there together
+if master branch commited   ✅✅✅✅✅if on feature branch rebased  featur commits going to tip of master branch   
+two pointer   every commit master  bottom   every commit feature tip of master commit
+6----
+when you should not rebase
+never rebase commit that have been shared with others  if you have alredy pushed commits up to github  Do not rebase them unless you are positive no one on 
+the team is using those commits
+you do not want to rewrite any git history that other people already have its a pain to reconcile alternative history
+✔✔✅✅you have rebasing commit that you have on your machine  not copy from share other people
+you cant rebase main branch
+7---
+came across conflict✅
+▶git rebase --abort     or   resolve  conflict  go to marker file  then   ▶git rebase --continue 

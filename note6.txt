@@ -1,0 +1,52 @@
+1---
+its helps us make comparison between different command diffrent branch between deffrent file between the staging area
+and working directory  and all these diffrent areas and diffrent thing ✔that we acan compare in a repo
+✅how to read output git diff command which is proably the most complicated part of section
+2----
+when use git diff alongside  git status and git log   
+get a better picture of a repository and how it has changed over time
+ example   whats changed   we have locally versus whats on github
+✅it doesnt do anything to the reposetory  just purely an ✅informative command  like a git log git status
+whats minus  whats plus  an atsign @    
+3---
+red and  minus sign  this pecce code gone green and plus sign  pece code added
+two vesion file  in over time or  two  deffrent file   one line  is adrres of file that be comparion
+▶git diff
+Without additional options, git diff lists all the changes in our working directory
+ that are NOT staged for the next commit.
+For each comparison, Git explains which files it is comparing. Usually this is two versions of the same file.
+Git also declares one file as "A" and the other as "B".
+ second line meta data compaare   it deosnt matter each file gets its own hash
+then  two line markers  minus sign   plus  sign
+next line  get two chunks   if  you have  thousand line code  then change a line  git diff indicate pece  changed code  with a before and after  pece code
+    every chunk haave header  at begining of each chunk  starts  with at sign @  on either side @ and  
+✅✅some looking wierd number @@ -3 ,4  +3,5 @@ two pair    minus  assign symbol file a    plus assign symbol file b
+not minus  mean minus  is mention to symbol file a and plus like    
+@@ -3 ,4  +3,5 @@  ✅a>>   line 3 from file a   4 line extract for chunk (green line skip)  
+@@ -3 ,4  +7,10 @@  ✅b>>   line 7 from file b   10 line extract for chunk (red line skip) 
+in fact git compare two version 
+4----
+when  use  git diff    indicate  stage areaa  with working dirctory😒
+plus sign it doesnt always mean something is new it just mean that it came from file b and in our case
+5---
+git diff   not staged with last commit
+git diff head  lists all changes in the working dir  tree since your last commit
+  so this case  staage and unstaged   with last commit compare but git diff  unstaaged with last commit
+/null   there is nothing for compare   new created
+6---
+▶ git diff --staged or git diff --cashed    compare   stage area  with last commit
+
+7-- 
+narrow down  specific file afor comaring  
+▶git diff head   file name      ▶git diff --satged    filename (note.txt)
+
+8---
+git deff branch1..branch2  two  dot separate  or  space
+▶✅✅  order is matter  a  sign minus symbul baranch 1      b sign plus symbul baranch 2  
+
+9---
+▶git deff  commit  46f29e8..0b75516
+✅order matter git log --oneline      copy brif hash   space  other commit hash
+10---
+gitcraken
+hold on shift key  and  diff view  between  commit

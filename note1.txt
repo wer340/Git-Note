@@ -1,0 +1,35 @@
+5---
+config
+
+this name and email   only  known  by other develooper     who put this commit
+bset practise   name is known for other people✅
+
+git config --global user.name  "Tom"
+
+8---  
+you are familiar this unix command   skip
+~ tildy chracter ✅  tildy is  home directory  in windows
+
+▶ ls   list list the content of directory   current location
+▶open .    open folder explorer   mac✅
+▶strat .    windows  folder desktop tildy✅ 
+
+▶ls name folder    list of content folder selected
+▶start folder      open this folder  windows✅
+▶open name folder     open   mac✅
+
+▶pwd  print working directory
+
+▶cd   change directory
+▶cd ..  move backward
+
+9----
+▶ touch  file.txt    name file +format      make file 
+▶mkdir   make directory
+▶rm   delete file   this delete   is gone  not cant recyclebin  ✅❌ 
+
+flag option in command
+▶ls -a     list   all  hidden file
+▶rm -rf     remove force     for delete folder      this folder gone forever❌✅
+▶clear   clean command line
+

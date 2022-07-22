@@ -1,0 +1,79 @@
+1--------
+consumer facing
+
+
+2----
+i not gonna to talk  about all behind secene  but highlited  impotant pieces
+✔object  ✔config ✔head ✔index ✔refs
+
+the config file fo addtional configuration
+there are multiple location that we can configure   setting we can do it globaly  so many diffrent overwhelming 
+▶git config --local user.name  
+in config file   term of   [user] name:""   email:""   [color] ui:true     and ...   command  ▶git config  color.ui  true
+[color "branch"] local=cyan bold; current=yellow bold;  see result ▶git branch a
+[color "diff"] old=magenta blod    
+3--
+refs folder  /heads (xurrent commit)   /tags  /remote ref remote   three  sub dir  
+
+4---
+head file  exist in .git dir head is main head  point to ref head   obtain current local 
+5---
+✅object folder   contain all the repo files this is where git store the backup of files the commits in a repo and more 
+the  files are all compressed and encrypted so they wont look like much 
+a nunch of sub dirctory  
+ 4 type of git objects    ✔commit  ✔tree ✔blob ✔annotated tag
+6---
+talking hash a    long digit character   they are hexadecimal character   exactly 40 digit long hexadecimal base 16  10 decimaal
+
+10,11,12,13,14,15 ▶▶ A,B,C,D,E,F
+hashing func  they  are arbitrary size  meaning input  of a variable size  then spid out  with fixed size 
+crypto graph digital signaature thats subset hash ✅✅ infeasible to invert 
+password hash  and save in daatbase
+uses one of these hasing function  called sha1 algoritm md5 dcdsa and ..
+7---
+4 type object  encrypt by sha1
+git is a key value data store   we can put data it  we ask it store something for us that could be a file it could be a folder or
+ it could be a hundred files and folder  we acould even just tell get to store a piece of text for us which we realy dont do beacuse
+all the times we make text in a file but im about to show you we can just give git a piece of text have it store that as well so we acan put all sort 
+of content into a git repo  that file  and content separtly
+
+8---
+▶echo 'hello' |git hash-object --stdin    echo " "  [|=pip]    with standard in --stin
+▶git hash-object <file>   object dir eventually all file and cintent store
+in .git > object   two dir   info and pac id git init  for first
+addtional option  ▶echo 'hello' |git hash-object --stdin -w  write  this tell to git actualy store our object
+know go to object folder new folder  two digit first hash put as name folder 
+9---
+▶echo 'hello' | git hash-object --stdin -w
+▶git cat-file -p <object-hash>
+now that we have data stored in our git object daatabase we can try retrieving it using the  git cat-file command 
+the -p option tell git to pretty print the content of the object based on its type
+it s from something called a blob will go into more detail
+but any of these hashes we get in get they all aare tied  to a git folder to a git object   one of four type
+when  ▶echo 'hello' |git hash-object --stdin -w    git create folder with hash code  after change file  and type command
+git create another folder with new hash git not delete old hash and ▶git cat-file -p <object-hash>   caan see old hash
+can see old hash then can retrive with ▶git cat-file -p object-hash  > file_name    return file
+10---
+blobs
+git blobs (binary large object)  aare the object type git uses to store the content of file in a given repository .
+blobs dont even include the filename of each file or any other data they just store the content of a file 
+     blobs and trees realy important       blob is used to store the content of a file    it is just content of a file  
+it doesnt include even the file name   one threee six  blos are a bulding block of the waay that we use git where we have diffrent file and different content
+and diffrent version and commit   but it does git its own hash   its not a commit hash its a blob hash
+11-----
+how track git  many file  when delete  
+trees are git objects used to store the content of directory each tree contain pointer that can refer to blob aand to other tree
+each entry in a tree contains the shaa-1 hash of a blob or tree as well as the mode type and file name 
+blob content of a file     tree contennt of directory
+viewing tree  ▶git cat-file -p master^{tree}  [^=carret]    git cat-file points out git object     master^{tree} syntax specifies the tree object that is pointed to 
+by the tip of our master  branch
+▶ ▶git cat-file -t  hash      git give  type of hash 
+12----
+commit
+ commit objectd combine a tree object  along with information about context thaat led to the current tree . 
+commit the author the commiter and of course the commit message
+
+✅parent+tree object
+commit  stored  with hash in object file  with type commit    ▶git cat-file -t  commit-hash  answer  commit and ▶git cat-file -t  commit-hash  answer  commit pretty print
+commit hash  > tree  > blob hash
+ tag  a particular commit   itself  not a commit

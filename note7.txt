@@ -1,0 +1,32 @@
+1---
+some people dont use at all stashing
+read around on reddit aand stack overflow a lot of people just you save and pop if they use the  stash at all
+2--
+📌📌two way for   uncommit change and switch branch
+1✅those change will just come with me to the destinaation branch  that if  the bringing files be same with switched branch  
+you conflicted over
+✅git wont let me switch if it detects potential conflict
+
+2-
+i can use git stash to sort of pause to save my changes whithout actually commitng them 
+
+3--
+▶ git stash  ✔
+use ▶git stash pop ✔ to remove the most recently ataashed changes in your stash and re-apply them to your working copy
+and hold  change in stash  and use them another branch
+✅unstaaged  and staged   all them stashed
+▶git stash apply    copy on multile branch whitout remove i stash
+5---
+when eror conflict   after  remove marker error file   then git resolve  your conflict   after not enywork finish✔
+6---
+we use stash for  many stash     git save  in order
+see them stashes   ▶git stash list    ✅ 
+▶git stash apply @{2}✅
+
+7----
+delete a particular stash you can use
+▶git stash drop stash@{1}
+and  ▶git stash clear   clear out all stashs 
+99% git stash and git stash pop 
+
+▶git stash -u   not selectd  some file for stash  

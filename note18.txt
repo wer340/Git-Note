@@ -1,0 +1,28 @@
+2-----
+global config file
+if you have multiple user account on machine that asystem wide config file would apply all of the user
+▶git config --global user.name
+
+i like to see  all of my aliases at once so we can actually open up config file   where look  for that?
+git folder > ~/.gitconfig  or ~/.config/git/config 
+c>user/my_name_pc/.gitconfig or  
+3--
+we can easily set up git aaliases to make our git experience a bit simpler and faster
+for example  we could define an alias ▶git ci  instaed of having to type ▶git commit  
+
+in config file   indent important 
+[alias]
+s=status 
+l=log
+command line 
+▶git config --global alias.showmebranch branch result ✔▶▶▶git showmebranch
+not use ! exclamition in terminal
+cm=commit -m
+
+a =add file1 file2      
+▶git add readme.md  package.json
+
+5-----
+find best alias
+
+exclamtion point in first mean    shell script
